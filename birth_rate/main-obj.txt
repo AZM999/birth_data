@@ -1,0 +1,32 @@
+1. UK : https://www.ons.gov.uk/peoplepopulationandcommunity/birthsdeathsandmarriages/livebirths/datasets/birthsummarytables
+
+
+2. france : https://www.insee.fr/en/statistiques/serie/000436391#Telechargement
+
+3. Brazil : https://www.ibge.gov.br/estatisticas/downloads-estatisticas.html
+            historical data not available on gov site
+
+4. South korea : https://kosis.kr/eng/statisticsList/statisticsListIndex.do?menuId=M_01_01&vwcd=MT_ETITLE&parmTabId=M_01_01#content-group
+
+5. Japan : https://www.e-stat.go.jp/en/stat-search/files?page=1&query=合計特殊出生率&layout=dataset
+
+6. Turkey : https://data.tuik.gov.tr/Bulten/Index?p=Birth-Statistics-2022-49673&dil=2
+
+7. INDIA : https://data.gov.in/search?title=births
+
+8. italy : https://www.istat.it/en/archivio/births
+    italy official data is only till 2017, 2018
+
+9. USA : https://healthdata.gov/dataset/NCHS-Births-and-General-Fertility-Rates-United-Sta/4ika-3jke/about_data
+         https://stacks.cdc.gov/view/cdc/122047
+
+         usa birth data only till 2018
+
+10. Ireland : https://data.cso.ie/ ,    https://data.cso.ie/table/VSQ16
+              provisional birth data from 1960-2023
+
+11. KSA and GCC countries (UAE, Bahrain, oman, qatar, kuwait) : https://dp.gccstat.org/en/DataAnalysis?K1qwlrD1IkaHeZQkfeqMAg
+
+12.  
+
+These countries are hit worst by the covid-19, especially USA top of the list , the cases and the deaths are almost the double the second country of india. 
