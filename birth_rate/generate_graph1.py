@@ -27,7 +27,7 @@ def plot_bar (x_data, y_data, x_label, y_label, title, ):
 # plots comparing the values month wise comparision and quaterly comparision for 
 # all years
 
-def generate_graph (data, from_, to, quarterly, monthly, country, br):
+def generate_graph (data, from_, to, quarterly, monthly, country, br=False, save=False):
 
     total_records = 12 * (int(to)+1 - int (from_))
 
@@ -68,10 +68,17 @@ def generate_graph (data, from_, to, quarterly, monthly, country, br):
                 qtr.append ('Q'+str(j)+'-'+str(i))
 
         # sum values for quarter-wise results
-        qs = []
-        print (total_records)
-        for i in range (0, total_records, 3):
-            qs.append (sum (data [i:i+3]))
+        if br == 1 or br == True:
+            #calculate avg birth rate for each quarter
+            qs = []
+            print (total_records)
+            for i in range (0, total_records, 3):
+                qs.append (sum (data [i:i+3]))
+        else:
+            qs = []
+            print (total_records)
+            for i in range (0, total_records, 3):
+                qs.append (sum (data [i:i+3]))
 
         df2 = pd.DataFrame ({'quarter':qtr, 'data': qs})
         df2.set_index ('quarter')
@@ -102,7 +109,9 @@ for i in range (0, 5):
 
 lb = lb[::-1]
 lb = sum (lb, [])
-# generate_graph (lb, 2018, 2022, 1, 0, 'UK (England + Wales)')
+
+
+#generate_graph (lb, 2018, 2022, 1, 0, 'UK (England + Wales)', 0)
 
  
 
