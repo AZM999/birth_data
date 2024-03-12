@@ -60,6 +60,8 @@ def generate_graph (data, from_, to, quarterly, monthly, country, br):
                 tp_m.append(str(m) + '-' + str(i))
 
         # plot monthly data
+        #print (tp, len(tp))
+        #print (data, len (data))
 
         plot_bar (tp, data, 'Time Period (months)', 'Total ' + title,
                   str(country)+' - '+title+' '+str(from_)+'-'+str(to)+' Monthly')
@@ -124,7 +126,7 @@ for i in range (0, 5):
 
 lb = lb[::-1]
 lb = sum (lb, [])
-#generate_graph (lb, 2018, 2022, 1, 0, 'UK (England + Wales)', 0)
+#generate_graph (lb, 2018, 2022, 0, 1, 'UK (England + Wales)', 0)
 
  
 
