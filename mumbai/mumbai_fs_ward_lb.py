@@ -2,8 +2,8 @@
 import matplotlib.pyplot as mp 
 import pandas as pd 
 
-path = "/home/azm/projects/birth_data/delhi/birth_bmc_f⁄s_ward.ods"
-path2 = "/home/azm/projects/birth_data/delhi/birth_death_bmc_f⁄s_ward.ods"
+path = "/home/azm/projects/birth_data/mumbai/birth_bmc_f⁄s_ward.ods"
+path2 = "/home/azm/projects/birth_data/mumbai/birth_death_bmc_f⁄s_ward.ods"
 
 import sys
 sys.path.append("..")
@@ -24,7 +24,7 @@ df.columns = col
 ### month wise plot to compare each month
 
 ax = df.plot.bar(x= 'month',stacked= False, width=0.8, 
-                      title= " Mumbai Live Births plotted By month for each year")
+                      title= " Mumbai f/s Ward Live Births plotted By month for each year")
 mp.xlabel ('Month')
 mp.ylabel ('Total Live Births ')
 for container in ax.containers:
@@ -46,7 +46,12 @@ for i in range (2017, 2024):
     for m in range (1,13):
         tp.append(str(i) + '-' + str(m))
 
+
+# monthly
 gg(lb, 2017, 2023, 0, 1, "Mumbai F_south ward Live Births", 0, " Live Births")
+
+# quarterly
+gg(lb, 2017, 2023, 1, 0, "Mumbai F_south ward Live Births", 0, " Live Births")
 
 
 # Death data
@@ -60,4 +65,8 @@ for i in range(1,8):
     dc.append(df2.iloc[:,i].to_list())
 dc = sum (dc, [])
 
+# monthly Death
 gg(dc, 2017, 2023, 0, 1, "Mumbai F_south ward Total Death for each Month", 0, "Deaths")
+# quarterly Death
+gg(dc, 2017, 2023, 1, 0, "Mumbai F_south ward Total Deaths recorded", 0, "Deaths")
+#
