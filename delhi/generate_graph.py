@@ -114,7 +114,7 @@ def generate_graph (data, from_, to, quarterly, monthly, country, br, title):
 
 
 # Test
-path = "/home/azm/projects/birth_data/birth_rate/uk/births_uk.xlsx"
+path = "/home/azm/projects/birth_data/countries/uk/births_uk.xlsx"
 
 data = pd.read_excel (path)
 df  = pd.DataFrame (data)

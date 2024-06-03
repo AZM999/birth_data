@@ -58,10 +58,13 @@ pivoted['averaged'] = pivoted['averaged'].apply(np.ceil)
 #      subtracting actual observed value from the mean of that month for all years 2017 to 2018
 #      for ex. 
 for i in range (2017, 2024):
-    pivoted[str(i)+'_s'] = pivoted['averaged'] - pivoted[i]
+    pivoted[str(i)+'_s'] = pivoted[i] - pivoted['averaged']
 
 dfs = pivoted.iloc[:,10:]
 dfs['month'] = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+
+#zero the empty values 
+dfs.iloc[3:12, 6] = 0 
 
 ax = dfs.plot.bar(x= 'month',stacked= False, width=0.8, 
                       title= " Delhi Live Births subtracted from average of each month from 2017-2023")
